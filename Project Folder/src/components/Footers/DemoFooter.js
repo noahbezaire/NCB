@@ -35,10 +35,10 @@ export default function DemoFooter() {
       <footer className="footer">
         <Container>
           <Row>
-            <Col md="3">
-              <h1 className="title">BLK• React</h1>
+            <Col md="6">
+              <h1 className="title">NB• Noah Bezare</h1>
             </Col>
-            <Col md="3" xs="6">
+            <Col md="2" xs="6">
               <Nav>
                 <NavItem>
                   <NavLink to="/index" tag={Link}>
@@ -47,59 +47,27 @@ export default function DemoFooter() {
                 </NavItem>
                 <NavItem>
                   <NavLink to="/landing-page" tag={Link}>
-                    Landing
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/register-page" tag={Link}>
-                    Register
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/profile-page" tag={Link}>
-                    Profile
+                    Learn More
                   </NavLink>
                 </NavItem>
               </Nav>
             </Col>
-            <Col md="3" xs="6">
+            <Col md="2" xs="6">
               <Nav>
                 <NavItem>
-                  <NavLink
-                    href="https://creative-tim.com/contact-us?ref=blkdspr-footer"
-                    target="_blank"
-                  >
-                    Contact Us
+                  <NavLink to="/landing-page" tag={Link}>
+                    About
                   </NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink
-                    href="https://creative-tim.com/about-us?ref=blkdspr-footer"
-                    target="_blank"
-                  >
-                    About Us
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    href="http://creative-tim.com/blog?ref=blkdspr-footer"
-                    target="_blank"
-                  >
-                    Blog
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    href="https://opensource.org/licenses/MIT?ref=blkdspr-footer"
-                    target="_blank"
-                  >
-                    License
+                  <NavItem>
+                  <NavLink to="/landing-page" tag={Link}>
+                    Contact
                   </NavLink>
                 </NavItem>
               </Nav>
             </Col>
-            <Col md="3">
-              <h3 className="title">Follow us:</h3>
+            <Col md="2">
+              <h3 className="title">Follow:</h3>
               <div className="btn-wrapper profile text-left">
                 <Button
                   className="btn-icon btn-neutral btn-round btn-simple"
@@ -110,9 +78,6 @@ export default function DemoFooter() {
                 >
                   <i className="fab fa-twitter" />
                 </Button>
-                <UncontrolledTooltip delay={0} target="tooltip39661217">
-                  Follow us
-                </UncontrolledTooltip>
                 <Button
                   className="btn-icon btn-neutral btn-round btn-simple ml-1"
                   color="default"
@@ -122,9 +87,6 @@ export default function DemoFooter() {
                 >
                   <i className="fab fa-facebook-square" />
                 </Button>
-                <UncontrolledTooltip delay={0} target="tooltip206037619">
-                  Like us
-                </UncontrolledTooltip>
                 <Button
                   className="btn-icon btn-neutral btn-round btn-simple ml-1"
                   color="default"
@@ -134,9 +96,6 @@ export default function DemoFooter() {
                 >
                   <i className="fab fa-dribbble" />
                 </Button>
-                <UncontrolledTooltip delay={0} target="tooltip750293512">
-                  Follow us
-                </UncontrolledTooltip>
               </div>
             </Col>
           </Row>

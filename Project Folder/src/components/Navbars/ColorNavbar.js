@@ -74,7 +74,7 @@ export default function ColorNavbar() {
               <Row>
                 <Col className="collapse-brand" xs="6">
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    BLK• <span>PRO React</span>
+                    NB• <span>Noah Bezaire</span>
                   </a>
                 </Col>
                 <Col className="collapse-close text-right" xs="6">
@@ -265,7 +265,7 @@ export default function ColorNavbar() {
                   size="sm"
                   target="_blank"
                 >
-                  <p>Buy Now</p>
+                  <p>Contact</p>
                 </Button>
               </NavItem>
             </Nav>
