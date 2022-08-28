@@ -54,11 +54,8 @@ export default function ScrollNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand to="/index" tag={Link} id="tooltip1995010466">
-              <span>BLK•</span> Design System PRO React
+              <span>NB•</span> Noah Bezaire
             </NavbarBrand>
-            <UncontrolledTooltip delay={0} target="tooltip1995010466">
-              Designed and Coded by Creative Tim
-            </UncontrolledTooltip>
             <button className="navbar-toggler" id="navigation">
               <span className="navbar-toggler-bar bar1" />
               <span className="navbar-toggler-bar bar2" />
@@ -70,7 +67,7 @@ export default function ScrollNavbar() {
               <Row>
                 <Col className="collapse-brand" xs="6">
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    BLK• <span>PRO React</span>
+                    NB• <span>Noah Bezaire</span>
                   </a>
                 </Col>
                 <Col className="collapse-close text-right" xs="6">
@@ -84,205 +81,76 @@ export default function ScrollNavbar() {
               <UncontrolledDropdown nav>
                 <DropdownToggle caret color="default" nav>
                   <i className="fa fa-cogs d-lg-none d-xl-none" />
-                  Getting started
+                  About
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-with-icons">
                   <DropdownItem to="/index" tag={Link}>
                     <i className="tim-icons icon-paper" />
-                    Components
+                    Sub Item 1
                   </DropdownItem>
-                  <DropdownItem to="/presentation" tag={Link}>
-                    <i className="tim-icons icon-bullet-list-67" />
-                    Presentation Page
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/overview?ref=blkdspr-sections-navbar"
-                    target="_blank"
-                  >
-                    <i className="tim-icons icon-book-bookmark" />
-                    Documentation
+                  <DropdownItem to="/index" tag={Link}>
+                    <i className="tim-icons icon-paper" />
+                    Sub Item 2
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
                 <DropdownToggle caret color="default" nav>
-                  <i aria-hidden={true} className="tim-icons icon-paper" />
-                  <p>Sections</p>
+                  <i className="fa fa-cogs d-lg-none d-xl-none" />
+                  Experience
                 </DropdownToggle>
-                <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
-                  <DropdownItem
-                    href="#pablo"
-                    onClick={(e) => scrollPage(e, "headers")}
-                  >
-                    <i className="tim-icons icon-app" />
-                    Headers
-                  </DropdownItem>
-                  <DropdownItem
-                    href="#pablo"
-                    onClick={(e) => scrollPage(e, "features")}
-                  >
-                    <i className="tim-icons icon-settings" />
-                    Features
-                  </DropdownItem>
-                  <DropdownItem
-                    href="#pablo"
-                    onClick={(e) => scrollPage(e, "blogs")}
-                  >
-                    <i className="tim-icons icon-align-left-2" />
-                    Blogs
-                  </DropdownItem>
-                  <DropdownItem
-                    href="#pablo"
-                    onClick={(e) => scrollPage(e, "teams")}
-                  >
-                    <i className="tim-icons icon-user-run" />
-                    Teams
-                  </DropdownItem>
-                  <DropdownItem
-                    href="#pablo"
-                    onClick={(e) => scrollPage(e, "projects")}
-                  >
-                    <i className="tim-icons icon-paper" />
-                    Projects
-                  </DropdownItem>
-                  <DropdownItem
-                    href="#pablo"
-                    onClick={(e) => scrollPage(e, "pricing")}
-                  >
-                    <i className="tim-icons icon-money-coins" />
-                    Pricing
-                  </DropdownItem>
-                  <DropdownItem
-                    href="#pablo"
-                    onClick={(e) => scrollPage(e, "testimonials")}
-                  >
-                    <i className="tim-icons icon-chat-33" />
-                    Testimonials
-                  </DropdownItem>
-                  <DropdownItem
-                    href="#pablo"
-                    onClick={(e) => scrollPage(e, "contactus")}
-                  >
-                    <i className="tim-icons icon-mobile" />
-                    Contact Us
-                  </DropdownItem>
-                  <DropdownItem
-                    href="#pablo"
-                    onClick={(e) => scrollPage(e, "tables")}
-                  >
-                    <i className="tim-icons icon-chart-bar-32" />
-                    Tables
-                  </DropdownItem>
-                  <DropdownItem
-                    href="#pablo"
-                    onClick={(e) => scrollPage(e, "accordion")}
-                  >
-                    <i className="tim-icons icon-paper" />
-                    Accordion
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav>
-                <DropdownToggle caret color="default" nav>
-                  <i
-                    aria-hidden={true}
-                    className="tim-icons icon-book-bookmark"
-                  />
-                  <p>Examples</p>
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem to="/about-us" tag={Link}>
-                    <i className="tim-icons icon-bulb-63" />
-                    About-us
-                  </DropdownItem>
-                  <DropdownItem to="/blog-post" tag={Link}>
-                    <i className="tim-icons icon-align-center" />
-                    Blog Post
-                  </DropdownItem>
-                  <DropdownItem to="/blog-posts" tag={Link}>
-                    <i className="tim-icons icon-chart-bar-32" />
-                    Blog Posts
-                  </DropdownItem>
-                  <DropdownItem to="/contact-us" tag={Link}>
-                    <i className="tim-icons icon-square-pin" />
-                    Contact Us
-                  </DropdownItem>
-                  <DropdownItem to="/landing-page" tag={Link}>
-                    <i className="tim-icons icon-paper" />
-                    Landing Page
-                  </DropdownItem>
-                  <DropdownItem to="/pricing" tag={Link}>
-                    <i className="tim-icons icon-coins" />
-                    Pricing
-                  </DropdownItem>
-                  <DropdownItem to="/ecommerce" tag={Link}>
-                    <i className="tim-icons icon-basket-simple" />
-                    Ecommerce Page
-                  </DropdownItem>
-                  <DropdownItem to="/product-page" tag={Link}>
-                    <i className="tim-icons icon-bag-16" />
-                    Product Page
-                  </DropdownItem>
-                  <DropdownItem to="/profile-page" tag={Link}>
-                    <i className="tim-icons icon-lock-circle" />
-                    Profile Page
-                  </DropdownItem>
-                  <DropdownItem to="/404-error" tag={Link}>
-                    <i className="tim-icons icon-button-power" />
-                    404 Error Page
-                  </DropdownItem>
-                  <DropdownItem to="/500-error" tag={Link}>
-                    <i className="tim-icons icon-alert-circle-exc" />
-                    500 Error Page
-                  </DropdownItem>
+                <DropdownMenu className="dropdown-with-icons">
                   <UncontrolledDropdown>
-                    <DropdownToggle
-                      caret
-                      color="default"
-                      className="dropdown-item"
-                      tag="a"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i
-                        aria-hidden={true}
-                        className="tim-icons icon-book-bookmark"
-                      />
-                      App Pages
-                    </DropdownToggle>
-                    <DropdownMenu>
+                    <DropdownItem to="/presentation" tag={Link}>
+                      <i className="tim-icons icon-bullet-list-67" />
+                        Full Time
+                    </DropdownItem>
+                  <DropdownToggle
+                    caret
+                    color="default"
+                    className="dropdown-item"
+                    tag="a"
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    <i
+                      aria-hidden={true}
+                      className="tim-icons icon-book-bookmark"
+                    />
+                    Co-Ops
+                  </DropdownToggle>
+                  <DropdownMenu className="dropdown-with-icons">
+
                       <DropdownItem to="/account-settings" tag={Link}>
                         <i className="tim-icons icon-lock-circle" />
-                        Account Settings
+                        Orbital Engineering
                       </DropdownItem>
                       <DropdownItem to="/login-page" tag={Link}>
                         <i className="tim-icons icon-tablet-2" />
-                        Login Page
+                        Kik Interactive
                       </DropdownItem>
                       <DropdownItem to="/register-page" tag={Link}>
                         <i className="tim-icons icon-laptop" />
-                        Register Page
+                        Avidbots
                       </DropdownItem>
                       <DropdownItem to="/reset-page" tag={Link}>
                         <i className="tim-icons icon-molecule-40" />
-                        Reset Page
+                        Symbility Intersect
                       </DropdownItem>
                       <DropdownItem to="/invoice-page" tag={Link}>
                         <i className="tim-icons icon-notes" />
-                        Invoice Page
+                        Lifion by ADP
                       </DropdownItem>
-                      <DropdownItem to="/checkout-page" tag={Link}>
-                        <i className="tim-icons icon-basket-simple" />
-                        Checkout Page
+                      <DropdownItem to="/invoice-page" tag={Link}>
+                        <i className="tim-icons icon-notes" />
+                        Microsoft
                       </DropdownItem>
-                      <DropdownItem to="/chat-page" tag={Link}>
-                        <i className="tim-icons icon-email-85" />
-                        Chat Page
-                      </DropdownItem>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
+
+                  </DropdownMenu>
+                </UncontrolledDropdown>
                 </DropdownMenu>
               </UncontrolledDropdown>
+
               <NavItem>
                 <Button
                   className="nav-link"
@@ -291,7 +159,7 @@ export default function ScrollNavbar() {
                   size="sm"
                   target="_blank"
                 >
-                  <p>Buy Now</p>
+                  <p>Contact</p>
                 </Button>
               </NavItem>
             </Nav>
