@@ -37,7 +37,7 @@ import {
 
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Footer from "components/Footers/Footer.js";
 
 export default function ResetPage() {
   const [emailFocus, setEmailFocus] = React.useState(false);
@@ -133,7 +133,7 @@ export default function ResetPage() {
             </Col>
           </Container>
         </div>
-        <DemoFooter />
+        <Footer />
       </div>
     </>
   );

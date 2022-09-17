@@ -17,34 +17,33 @@
 import React from "react";
 
 // core components
-import ScrollNavbar from "components/Navbars/ScrollNavbar.js";
-import IndexHeader from "components/Headers/IndexHeader.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import ColorNavbar from "components/Navbars/ColorNavbar.js";
+import PresentationHeader from "components/Headers/PresentationHeader.js";
+import Footer from "components/Footers/Footer.js";
 
 // Sections for this page
-// (we've divided this page into multiple react components to make it a bit more readable)
+import Info from "./PresentationSections/Info.js";
+import BasicComponents from "./PresentationSections/BasicComponents.js";
 
 
-export default function Index() {
+export default function Presentation() {
   const wrapper = React.useRef(null);
   React.useEffect(() => {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     wrapper.current.scrollTop = 0;
-    document.body.classList.add("index-page");
+    document.body.classList.add("presentation-page");
     return function cleanup() {
-      document.body.classList.remove("index-page");
+      document.body.classList.remove("presentation-page");
     };
   }, []);
   return (
     <>
-      <ScrollNavbar />
+      <ColorNavbar />
       <div className="wrapper" ref={wrapper}>
-        <IndexHeader />
-        <div className="main">
-
-        </div>
-        <DemoFooter />
+        <PresentationHeader />
+        <div className="space-110" />
+        <Footer />
       </div>
     </>
   );

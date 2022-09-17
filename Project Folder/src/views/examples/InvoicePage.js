@@ -30,7 +30,7 @@ import {
 
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Footer from "components/Footers/Footer.js";
 
 export default function InvoicePage() {
   const wrapper = React.useRef(null);
@@ -182,7 +182,7 @@ export default function InvoicePage() {
             </Row>
           </Container>
         </div>
-        <DemoFooter />
+        <Footer />
       </div>
     </>
   );

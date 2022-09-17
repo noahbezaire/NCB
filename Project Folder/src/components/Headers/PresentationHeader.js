@@ -59,9 +59,9 @@ export default function PresentationHeader() {
               <small className="text-warning">Noah Bezaire</small>
             </h1>
             <h3>
-            <i>
-              Secondary Title Here
-            </i>
+              <i>
+                Management Engineering Graduate
+                </i>
             </h3>
             <Button
               className="btn-simple mt-4"
@@ -71,15 +71,6 @@ export default function PresentationHeader() {
               target="_blank"
             >
               Contact
-            </Button>
-            <Button
-              className="btn-link mt-4 d-block"
-              color="warning"
-              href="#pablo"
-              onClick={scrollPage}
-              size="lg"
-            >
-              <u>learn more</u>
             </Button>
           </div>
         </Container>

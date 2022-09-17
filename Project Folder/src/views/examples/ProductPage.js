@@ -39,7 +39,7 @@ import {
 
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Footer from "components/Footers/Footer.js";
 
 const items = [
   {
@@ -611,7 +611,7 @@ export default function ProductPage() {
             </Row>
           </Container>
         </div>
-        <DemoFooter />
+        <Footer />
       </div>
     </>
   );

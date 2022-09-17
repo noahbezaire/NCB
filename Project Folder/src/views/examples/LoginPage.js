@@ -37,7 +37,7 @@ import {
 
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Footer from "components/Footers/Footer.js";
 
 export default function LoginPage() {
   const [firstNameFocus, setFirstNameFocus] = React.useState(undefined);
@@ -147,7 +147,7 @@ export default function LoginPage() {
           </Col>
         </Container>
       </div>
-      <DemoFooter />
+      <Footer />
     </>
   );
 }

@@ -37,7 +37,7 @@ import {
 
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Footer from "components/Footers/Footer.js";
 
 // custom previous button for the slick component
 const PrevButton = (props) => {
@@ -708,7 +708,7 @@ export default function BlogPost() {
             </Col>
           </Container>
         </div>
-        <DemoFooter />
+        <Footer />
       </div>
     </>
   );

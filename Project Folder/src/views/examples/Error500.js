@@ -21,7 +21,7 @@ import { Container, Row, Col } from "reactstrap";
 
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Footer from "components/Footers/Footer.js";
 
 export default function Error500() {
   const wrapper = React.useRef(null);
@@ -58,7 +58,7 @@ export default function Error500() {
             </Row>
           </Container>
         </div>
-        <DemoFooter />
+        <Footer />
       </div>
     </>
   );

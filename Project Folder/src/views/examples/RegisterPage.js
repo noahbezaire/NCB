@@ -40,7 +40,7 @@ import {
 
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Footer from "components/Footers/Footer.js";
 
 export default function RegisterPage() {
   const [squares1to6, setSquares1to6] = React.useState("");
@@ -218,7 +218,7 @@ export default function RegisterPage() {
             style={{ transform: squares1to6 }}
           />
         </div>
-        <DemoFooter />
+        <Footer />
       </div>
     </>
   );

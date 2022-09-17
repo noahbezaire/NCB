@@ -27,6 +27,7 @@ import {
   NavbarBrand,
   Navbar,
   NavItem,
+  NavLink,
   Nav,
   Container,
   Row,
@@ -85,75 +86,30 @@ export default function ColorNavbar() {
               </Row>
             </div>
             <Nav className="ml-auto" navbar>
-              <UncontrolledDropdown nav>
-                <DropdownToggle caret color="default" nav>
-                  <i className="fa fa-cogs d-lg-none d-xl-none" />
-                  About
-                </DropdownToggle>
-                <DropdownMenu className="dropdown-with-icons">
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="tim-icons icon-paper" />
-                    Components
-                  </DropdownItem>
-                  <DropdownItem to="/presentation" tag={Link}>
-                    <i className="tim-icons icon-bullet-list-67" />
-                    Presentation Page
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/overview?ref=blkdspr-pages-navbar"
-                    target="_blank"
-                  >
-                    <i className="tim-icons icon-book-bookmark" />
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav>
-                <DropdownToggle caret color="default" nav>
-                  <i className="fa fa-cogs d-lg-none d-xl-none" />
-                  Education
-                </DropdownToggle>
-                <DropdownMenu className="dropdown-with-icons">
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="tim-icons icon-paper" />
-                    Components
-                  </DropdownItem>
-                  <DropdownItem to="/presentation" tag={Link}>
-                    <i className="tim-icons icon-bullet-list-67" />
-                    Presentation Page
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/overview?ref=blkdspr-pages-navbar"
-                    target="_blank"
-                  >
-                    <i className="tim-icons icon-book-bookmark" />
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav>
-                <DropdownToggle caret color="default" nav>
-                  <i className="fa fa-cogs d-lg-none d-xl-none" />
-                  Experience
-                </DropdownToggle>
-                <DropdownMenu className="dropdown-with-icons">
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="tim-icons icon-paper" />
-                    Components
-                  </DropdownItem>
-                  <DropdownItem to="/presentation" tag={Link}>
-                    <i className="tim-icons icon-bullet-list-67" />
-                    Presentation Page
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/overview?ref=blkdspr-pages-navbar"
-                    target="_blank"
-                  >
-                    <i className="tim-icons icon-book-bookmark" />
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+            <NavItem>
+              <NavLink to="/Index" tag={Link}>Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/About" tag={Link}>About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/Education" tag={Link}>Education</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/Experience" tag={Link}>Experience</NavLink>
+            </NavItem>
+              <NavItem>
+                <Button
+                  className="nav-link"
+                  color="default"
+                  tag={Link}
+                  to="/Contact"
+                  size="sm"
+                >
+                  <p>Contact</p>
+                </Button>
+              </NavItem>
+
             </Nav>
           </UncontrolledCollapse>
         </Container>

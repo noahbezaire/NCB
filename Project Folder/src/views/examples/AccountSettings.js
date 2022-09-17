@@ -43,7 +43,7 @@ import {
 
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Footer from "components/Footers/Footer.js";
 import ImageUpload from "components/CustomUpload/ImageUpload.js";
 import TagsInput from "components/TagsInput/TagsInput.js";
 
@@ -845,7 +845,7 @@ export default function AccountSettings() {
             </Row>
           </Container>
         </div>
-        <DemoFooter />
+        <Footer />
       </div>
     </>
   );

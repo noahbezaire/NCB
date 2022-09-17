@@ -35,7 +35,7 @@ import {
 
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Footer from "components/Footers/Footer.js";
 
 import { chartExample1 } from "variables/charts.js";
 
@@ -587,7 +587,7 @@ export default function LandingPage() {
             </Row>
           </Container>
         </section>
-        <DemoFooter />
+        <Footer />
       </div>
     </>
   );

@@ -24,7 +24,7 @@ import React from "react";
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import PresentationHeader from "components/Headers/PresentationHeader.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Footer from "components/Footers/Footer.js";
 
 // Sections for this page
 // (we've divided this page into multiple react components to make it a bit more readable)
@@ -70,7 +70,7 @@ export default function Presentation() {
         <Features />
         <Testimonials />
         <Pricing />
-        <DemoFooter />
+        <Footer />
       </div>
     </>
   );

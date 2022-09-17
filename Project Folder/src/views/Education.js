@@ -16,48 +16,37 @@
 */
 import React from "react";
 
-// reactstrap components
-import { Container, Row, Col } from "reactstrap";
-
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
-export default function Error400() {
+// Sections for this page
+import Features from "./IndexSections/Features.js";
+import ContentUniversity from "./IndexSections/ContentUniversity.js";
+import ContentCoop from "./IndexSections/ContentCoop.js";
+
+
+
+
+export default function Presentation() {
   const wrapper = React.useRef(null);
   React.useEffect(() => {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     wrapper.current.scrollTop = 0;
-    document.body.classList.add("error-page");
+    document.body.classList.add("presentation-page");
     return function cleanup() {
-      document.body.classList.remove("error-page");
+      document.body.classList.remove("presentation-page");
     };
   }, []);
   return (
     <>
       <ColorNavbar />
       <div className="wrapper" ref={wrapper}>
-        <div className="page-header error-page header-filter">
-          <div
-            className="page-header-image"
-            style={{
-              backgroundImage:
-                "url(" + require("assets/img/braden-collum.jpg") + ")"
-            }}
-          />
-          <Container>
-            <Row>
-              <Col md="12">
-                <h1 className="title">404</h1>
-                <h2 className="description">Page not found :(</h2>
-                <h4 className="description">
-                  Ooooups! Looks like you got lost.
-                </h4>
-              </Col>
-            </Row>
-          </Container>
-        </div>
+      <div className="space-110" />
+        <ContentUniversity/>
+        <ContentCoop/>
+        <Features />
         <Footer />
       </div>
     </>

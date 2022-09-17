@@ -41,7 +41,7 @@ import {
 
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Footer from "components/Footers/Footer.js";
 
 export default function BlogPosts() {
   const [transform, setTransform] = React.useState(
@@ -911,7 +911,7 @@ export default function BlogPosts() {
             </Container>
           </div>
         </div>
-        <DemoFooter />
+        <Footer />
       </div>
     </>
   );

@@ -25,11 +25,16 @@ import "assets/scss/blk-design-system-pro-react.scss?v1.2.0";
 import "assets/demo/demo.css";
 import "assets/demo/react-demo.css";
 
-// presentation pages
+// core pages
 import Index from "views/Index.js";
+import About from "views/About.js";
+import Education from "views/Education.js";
+import Experience from "views/Experience.js";
+import Contact from "views/Contact.js";
+
+// temp pages
 import Presentation from "views/Presentation.js";
 import Sections from "views/Sections.js";
-// example pages
 import AboutUs from "views/examples/AboutUs.js";
 import BlogPost from "views/examples/BlogPost.js";
 import BlogPosts from "views/examples/BlogPosts.js";
@@ -55,6 +60,13 @@ root.render(
   <BrowserRouter>
     <Switch>
       <Route path="/index"            render={(props) => <Index {...props} />} />
+      <Route path="/about"            render={(props) => <About {...props} />} />
+      <Route path="/education"        render={(props) => <Education {...props} />}/>
+      <Route path="/experience"            render={(props) => <Experience {...props} />} />
+      <Route path="/contact"            render={(props) => <Contact {...props} />} />
+
+
+      // temp pages
       <Route path="/presentation"     render={(props) => <Presentation {...props} />}/>
       <Route path="/sections"         render={(props) => <Sections {...props} />} />
       <Route path="/about-us"         render={(props) => <AboutUs {...props} />} />

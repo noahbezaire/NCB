@@ -38,7 +38,7 @@ import {
 
 // core components
 import ColorNavbar from "components/Navbars/ColorNavbar.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Footer from "components/Footers/Footer.js";
 
 export default function Pricing() {
   const [emailFocus, setEmailFocus] = React.useState(undefined);
@@ -496,7 +496,7 @@ export default function Pricing() {
             </Container>
           </div>
         </div>
-        <DemoFooter />
+        <Footer />
       </div>
     </>
   );

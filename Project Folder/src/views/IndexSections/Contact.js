@@ -34,9 +34,6 @@ import {
   Col
 } from "reactstrap";
 
-// core components
-import ColorNavbar from "components/Navbars/ColorNavbar.js";
-import Footer from "components/Footers/Footer.js";
 
 const ContactUsMap = () => {
   const mapRef = React.useRef(null);
@@ -217,90 +214,12 @@ export default function ContactUs() {
   }, []);
   return (
     <>
-      <ColorNavbar />
       <div className="wrapper" ref={wrapper}>
-        <div className="page-header header-filter contactus-3">
-          <div
-            className="page-header-image"
-            style={{
-              backgroundImage:
-                "url(" + require("assets/img/andre-benz.jpg") + ")"
-            }}
-          />
           <Container>
-            <Row>
-              <Col className="text-center" md="12">
-                <h1 className="title">Got a question?</h1>
-                <h3>We'd like to talk more about what you need</h3>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-        <div className="main">
-          <Container fluid>
-            <Row className="infos mb-5">
-              <Col lg="3">
-                <div className="info info-hover">
-                  <div className="icon icon-primary">
-                    <img
-                      alt="..."
-                      className="bg-blob"
-                      src={require("assets/img/feature-blob/primary.png")}
-                    />
-                    <i className="tim-icons icon-square-pin" />
-                  </div>
-                  <h4 className="info-title">Address</h4>
-                  <p className="description">12124 First Street, nr 54</p>
-                </div>
-              </Col>
-              <Col lg="3">
-                <div className="info info-hover">
-                  <div className="icon icon-info">
-                    <img
-                      alt="..."
-                      className="bg-blob"
-                      src={require("assets/img/feature-blob/info.png")}
-                    />
-                    <i className="tim-icons icon-email-85" />
-                  </div>
-                  <h4 className="info-title">Email</h4>
-                  <p className="description">support@youremail.com</p>
-                </div>
-              </Col>
-              <Col lg="3">
-                <div className="info info-hover">
-                  <div className="icon icon-warning">
-                    <img
-                      alt="..."
-                      className="bg-blob"
-                      src={require("assets/img/feature-blob/warning.png")}
-                    />
-                    <i className="tim-icons icon-mobile" />
-                  </div>
-                  <h4 className="info-title">Phone Number</h4>
-                  <p className="description">+1(424) 535 3523</p>
-                </div>
-              </Col>
-              <Col lg="3">
-                <div className="info info-hover">
-                  <div className="icon icon-success">
-                    <img
-                      alt="..."
-                      className="bg-blob"
-                      src={require("assets/img/feature-blob/success.png")}
-                    />
-                    <i className="tim-icons icon-single-02" />
-                  </div>
-                  <h4 className="info-title">Contact</h4>
-                  <p className="description">Andrew Samian</p>
-                </div>
-              </Col>
-            </Row>
             <Row className="mt-5 mb-4 pt-5">
               <Col className="ml-auto mr-auto text-center mt-5" md="8">
-                <Badge color="info">Leave a message</Badge>
                 <h1 className="title">
-                  Tell us more about <b>yourself</b>
+                  Get in Touch
                 </h1>
                 <h4 className="desc">
                   Whether you have questions or you would just like to say
@@ -327,7 +246,6 @@ export default function ContactUs() {
                         >
                           <InputGroupAddon addonType="prepend">
                             <InputGroupText>
-                              <i className="tim-icons icon-single-02" />
                             </InputGroupText>
                           </InputGroupAddon>
                           <Input
@@ -349,7 +267,6 @@ export default function ContactUs() {
                           >
                             <InputGroupAddon addonType="prepend">
                               <InputGroupText>
-                                <i className="tim-icons icon-caps-small" />
                               </InputGroupText>
                             </InputGroupAddon>
                             <Input
@@ -372,11 +289,10 @@ export default function ContactUs() {
                       >
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
-                            <i className="tim-icons icon-email-85" />
                           </InputGroupText>
                         </InputGroupAddon>
                         <Input
-                          placeholder="Email Here..."
+                          placeholder="Email Address..."
                           type="text"
                           onFocus={(e) => setEmailFocus(true)}
                           onBlur={(e) => setEmailFocus(false)}
@@ -389,6 +305,7 @@ export default function ContactUs() {
                         id="message-1"
                         name="message"
                         rows="6"
+                        placeholder="Message Body..."
                         type="textarea"
                       />
                     </FormGroup>
@@ -408,9 +325,6 @@ export default function ContactUs() {
             </Row>
           </Container>
         </div>
-        <ContactUsMap />
-        <Footer />
-      </div>
     </>
   );
 }

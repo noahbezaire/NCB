@@ -33,7 +33,9 @@ export default function Index() {
         <Container>
           <div className="content-center brand">
             <h1 className="h1-seo">Noah Bezaire</h1>
-            <h4><i>Secondary Title Here</i></h4>
+            <h4>
+              <i>Management Engineering Graduate</i>
+            </h4>
           </div>
         </Container>
       </div>
