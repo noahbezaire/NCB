@@ -56,7 +56,7 @@ export default function PresentationHeader() {
         <Container>
           <div className="content-center brand">
             <h1 className="h1-seo">
-              <small className="text-warning">Noah Bezaire</small>
+              <small className="text-primary">Noah Bezaire</small>
             </h1>
             <h3>
               <i>
@@ -65,10 +65,9 @@ export default function PresentationHeader() {
             </h3>
             <Button
               className="btn-simple mt-4"
-              color="warning"
-              href="#"
+              color="primary"
+              href="mailto:ncbezaire@email.com?subject=Reaching out via your site"
               size="lg"
-              target="_blank"
             >
               Contact
             </Button>

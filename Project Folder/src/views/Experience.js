@@ -21,9 +21,9 @@ import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 // Sections for this page
-import Info from "./PresentationSections/Info.js";
-import BasicComponents from "./PresentationSections/BasicComponents.js";
 import Coops from "./IndexSections/Coops.js"
+import FullTime from "./IndexSections/FullTime.js"
+
 
 
 export default function Presentation() {
@@ -42,6 +42,7 @@ export default function Presentation() {
       <ColorNavbar />
       <div className="wrapper" ref={wrapper}>
         <Coops/>
+        <FullTime/>
         <Footer />
       </div>
     </>

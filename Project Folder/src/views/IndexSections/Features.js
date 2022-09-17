@@ -28,7 +28,7 @@ export default function Features() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h1 className="title">Managment Engineering</h1>
+                <h1 className="title">Managment Engineering Degree</h1>
               </Col>
             </Row>
             <Row>
@@ -40,12 +40,12 @@ export default function Features() {
                       className="bg-blob"
                       src={require("assets/img/feature-blob/primary.png")}
                     />
-                    <i className="tim-icons icon-user-run" />
+                    <i className="tim-icons icon-chart-bar-32" />
                   </div>
                   <h4 className="info-title">Operations Research</h4>
                   <p className="description">
-                    Gain access to the demographics, psychographics, and
-                    location of unique people.
+                    The application of scientific principles to business management, providing a quantitative basis for complex decisions.
+.
                   </p>
                 </div>
               </Col>
@@ -57,12 +57,11 @@ export default function Features() {
                       className="bg-blob"
                       src={require("assets/img/feature-blob/success.png")}
                     />
-                    <i className="tim-icons icon-atom" />
+                    <i className="tim-icons icon-vector" />
                   </div>
                   <h4 className="info-title">Information Systems</h4>
                   <p className="description">
-                    Unify data from Facebook, Instagram, Twitter, LinkedIn, and
-                    Youtube to gain rich insights.
+                    The study of how businesses and organizations design and implement computer applications
                   </p>
                 </div>
               </Col>
@@ -74,16 +73,29 @@ export default function Features() {
                       className="bg-blob"
                       src={require("assets/img/feature-blob/warning.png")}
                     />
-                    <i className="tim-icons icon-gift-2" />
+                    <i className="tim-icons icon-settings-gear-63" />
                   </div>
                   <h4 className="info-title">Management of Technology</h4>
                   <p className="description">
-                    Track actions taken on your website, understand the impact
-                    on your bottom line.
+                    Concentration on organizational behaviour and decision-making in all areas of business planning.
                   </p>
                 </div>
               </Col>
             </Row>
+            <Row>
+            <Col md="12">
+
+              <Button
+                className="btn-simple mt-4"
+                color="primary"
+                target="_blank"
+                href="https://uwaterloo.ca/management-sciences/"
+                size="lg"
+              >
+                Learn More about Mangement Engineering
+              </Button>
+              </Col>
+              </Row>
           </Container>
         </div>
         {/* ********* END FEATURES 1 ********* */}

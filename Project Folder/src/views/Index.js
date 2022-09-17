@@ -21,11 +21,6 @@ import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import PresentationHeader from "components/Headers/PresentationHeader.js";
 import Footer from "components/Footers/Footer.js";
 
-// Sections for this page
-import Info from "./PresentationSections/Info.js";
-import BasicComponents from "./PresentationSections/BasicComponents.js";
-
-
 export default function Presentation() {
   const wrapper = React.useRef(null);
   React.useEffect(() => {

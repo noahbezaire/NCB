@@ -38,224 +38,7 @@ import {
 } from "reactstrap";
 
 // core components
-const items = [
-  {
-    content: (
-      <Container>
-        <Row>
-          <Col md="4">
-            <h1 className="title">Charlie Watson</h1>
-          </Col>
-          <Col md="4">
-            <img
-              alt="..."
-              className="d-block"
-              src={require("assets/img/charlie.jpg")}
-            />
-          </Col>
-          <Col md="4">
-            <div className="wrapper">
-              <div className="category">
-                <strong>Position:</strong> Artist <br />
-                <strong>Experience:</strong> 5 years
-              </div>
-              <div className="description">
-                Artist is a term applied to a person who engages in an activity
-                deemed to be an art. An artist also may be defined unofficially
-                as "a person who expresses him- or herself through a medium". He
-                is a descriptive term applied to a person who engages in an
-                activity deemed to be an art. An artist also may be defined
-                unofficially as "a person who expresses him- or herself through
-                a medium".
-              </div>
-              <div className="footer">
-                <Button
-                  className="btn-icon btn-round"
-                  color="twitter"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-twitter" />
-                </Button>
-                <Button
-                  className="btn-icon btn-round"
-                  color="facebook"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-facebook-square" />
-                </Button>
-                <Button
-                  className="btn-icon btn-round"
-                  color="dribbble"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-dribbble" />
-                </Button>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    ),
-    altText: "",
-    caption: "",
-    src: "0"
-  },
-  {
-    content: (
-      <Container>
-        <Row>
-          <Col md="4">
-            <h1 className="title">Quavo Austen</h1>
-          </Col>
-          <Col md="4">
-            <img
-              alt="..."
-              className="d-block"
-              src={require("assets/img/tom-klein.jpg")}
-            />
-          </Col>
-          <Col md="4">
-            <div className="wrapper">
-              <div className="category">
-                <strong>Position:</strong> Actor <br />
-                <strong>Experience:</strong> 1 year
-              </div>
-              <div className="description">
-                Artist is a term applied to a person who engages in an activity
-                deemed to be an art. An artist also may be defined unofficially
-                as "a person who expresses him- or herself through a medium". He
-                is a descriptive term applied to a person who engages in an
-                activity deemed to be an art. An artist also may be defined
-                unofficially as "a person who expresses him- or herself through
-                a medium".
-              </div>
-              <div className="footer">
-                <Button
-                  className="btn-icon btn-round"
-                  color="twitter"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-twitter" />
-                </Button>
-                <Button
-                  className="btn-icon btn-round"
-                  color="facebook"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-facebook-square" />
-                </Button>
-                <Button
-                  className="btn-icon btn-round"
-                  color="dribbble"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-dribbble" />
-                </Button>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    ),
-    altText: "",
-    caption: "",
-    src: "1"
-  },
-  {
-    content: (
-      <Container>
-        <Row>
-          <Col md="4">
-            <h1 className="title">Lucy</h1>
-          </Col>
-          <Col md="4">
-            <img
-              alt="..."
-              className="d-block"
-              src={require("assets/img/lucy.jpg")}
-            />
-          </Col>
-          <Col md="4">
-            <div className="wrapper">
-              <div className="category">
-                <strong>Position:</strong> CEO <br />
-                <strong>Experience:</strong> 7 years
-              </div>
-              <div className="description">
-                Artist is a term applied to a person who engages in an activity
-                deemed to be an art. An artist also may be defined unofficially
-                as "a person who expresses him- or herself through a medium". He
-                is a descriptive term applied to a person who engages in an
-                activity deemed to be an art. An artist also may be defined
-                unofficially as "a person who expresses him- or herself through
-                a medium".
-              </div>
-              <div className="footer">
-                <Button
-                  className="btn-icon btn-round"
-                  color="twitter"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-twitter" />
-                </Button>
-                <Button
-                  className="btn-icon btn-round ml-1"
-                  color="facebook"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-facebook-square" />
-                </Button>
-                <Button
-                  className="btn-icon btn-round ml-1"
-                  color="dribbble"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-dribbble" />
-                </Button>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    ),
-    altText: "",
-    caption: "",
-    src: "2"
-  }
-];
-
-export default function Teams() {
-  const [activeIndex, setActiveIndex] = React.useState(0);
-  const [animating, setAnimating] = React.useState(false);
-  const onExiting = () => {
-    setAnimating(true);
-  };
-
-  const onExited = () => {
-    setAnimating(false);
-  };
-
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  };
-
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  };
-
+export default function Coop() {
   return (
     <>
       <div className="cd-section" id="teams">
@@ -265,7 +48,7 @@ export default function Teams() {
               <Col className="ml-auto mr-auto text-center" md="8">
                 <h2 className="title">Co-Op Experience</h2>
                 <h4 className="description">
-                  Sample paragraph goes here that has a couple lines of text so that it doesnt look bad
+                Co-Operative Education was the #1 reason that I choose to attend Waterloo and I was fortunate to have a variety of experiences.
                 </h4>
               </Col>
             </Row>
@@ -274,13 +57,11 @@ export default function Teams() {
                 <Card className="card-profile">
                   <div className="card-image">
                     <h4 className="title">Coop 1</h4>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/emily.jpg")}
+                        src={require("assets/img/coop-logo-orbital.png")}
                       />
-                    </a>
                   </div>
                   <CardBody>
                     <hr className="line-primary" />
@@ -301,7 +82,7 @@ export default function Teams() {
                         </tr>
                         <tr>
                           <td className="text-left">
-                          <i className="tim-icons icon-compass-05" /> Pittsburgh, PA
+                          <i className="tim-icons icon-compass-05"/>Pittsburgh, PA
                           </td>
                         </tr>
                       </tbody>
@@ -313,13 +94,11 @@ export default function Teams() {
                 <Card className="card-profile">
                   <div className="card-image">
                   <h4 className="title">Coop 2</h4>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/michael.jpg")}
+                        src={require("assets/img/logo-kik.png")}
                       />
-                    </a>
                   </div>
                   <CardBody>
                     <hr className="line-primary" />
@@ -352,13 +131,11 @@ export default function Teams() {
                 <Card className="card-profile">
                   <div className="card-image">
                   <h4 className="title">Coop 3</h4>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/julie.jpg")}
+                        src={require("assets/img/logo-avidbots.png")}
                       />
-                    </a>
                   </div>
                   <CardBody>
                     <hr className="line-primary" />
@@ -393,13 +170,11 @@ export default function Teams() {
                 <Card className="card-profile">
                   <div className="card-image">
                   <h4 className="title">Coop 4 & 5</h4>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/emily.jpg")}
+                        src={require("assets/img/coop-logo-symbility.png")}
                       />
-                    </a>
                   </div>
                   <CardBody>
                     <hr className="line-primary" />
@@ -432,13 +207,11 @@ export default function Teams() {
                 <Card className="card-profile">
                   <div className="card-image">
                   <h4 className="title">Coop 6</h4>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/michael.jpg")}
+                        src={require("assets/img/lifion.png")}
                       />
-                    </a>
                   </div>
                   <CardBody>
                     <hr className="line-primary" />
@@ -470,14 +243,12 @@ export default function Teams() {
               <Col md="4">
                 <Card className="card-profile">
                   <div className="card-image">
-                  <h4 className="title">Coop 6</h4>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <h4 className="title">Coop 7</h4>
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/michael.jpg")}
+                        src={require("assets/img/msft.png")}
                       />
-                    </a>
                   </div>
                   <CardBody>
                     <hr className="line-primary" />

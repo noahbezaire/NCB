@@ -17,7 +17,7 @@
 import React from "react";
 
 // reactstrap components
-import { Container, Row, Col } from "reactstrap";
+import { Container,Button, Row, Col } from "reactstrap";
 
 export default function Content() {
   return (
@@ -29,11 +29,20 @@ export default function Content() {
               <div className="section-description">
                 <h1 className="title">Co-Operative Education</h1>
                 <h5 className="category text-danger mb-5">
-                  <strong>#1 Coop Program</strong>
+                  <strong>North America's largest co-op program</strong>
                 </h5>
                 <p className="description">
-                  {`We took into consideration multiple use cases and came up with some specific areas for you. If you need elements such as tables, comments, description areas, tabs and many others, we've got you covered. They're beautiful and easy to use for the end user navigating your website.`}
+                  {`At Waterloo, co-op students alternate study terms with work terms and graduate with up to two years of relevant, paid work experience. This means two years of experience learning how to navigate the hiring process, applying your skills to real-life problems and learning about yourself along the way.`}
                 </p>
+                <Button
+                  className="btn-simple mt-4"
+                  color="primary"
+                  target="_blank"
+                  href="https://uwaterloo.ca/co-operative-education/about-co-op"
+                  size="lg"
+                >
+                  Learn more about Co-Op
+                </Button>
               </div>
             </Col>
             <Col lg="6">
@@ -42,7 +51,7 @@ export default function Content() {
                   alt="..."
                   className="img img-raised rounded img-blog rellax"
                   data-rellax-speed="4"
-                  src={require("assets/img/presentation-page/content1.png")}
+                  src={require("assets/img/ceca.jpeg")}
                 />
               </div>
             </Col>

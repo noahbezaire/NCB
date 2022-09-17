@@ -21,8 +21,6 @@ import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 // Sections for this page
-import Info from "./PresentationSections/Info.js";
-import BasicComponents from "./PresentationSections/BasicComponents.js";
 import Contact from "./IndexSections/Contact.js";
 
 

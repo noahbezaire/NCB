@@ -22,8 +22,6 @@ import PresentationHeader from "components/Headers/PresentationHeader.js";
 import Footer from "components/Footers/Footer.js";
 
 // Sections for this page
-import Info from "./PresentationSections/Info.js";
-import BasicComponents from "./PresentationSections/BasicComponents.js";
 import About from "./IndexSections/About.js";
 
 
@@ -42,10 +40,10 @@ export default function Presentation() {
   return (
     <>
       <ColorNavbar />
-      <div className="wrapper" ref={wrapper}>
-        <About />
-        <Footer />
-      </div>
+        <div className="wrapper" ref={wrapper}>
+          <About />
+        </div>
+      <Footer />
     </>
   );
 }

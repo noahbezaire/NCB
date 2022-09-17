@@ -17,7 +17,7 @@
 import React from "react";
 
 // reactstrap components
-import { Container, Row, Col } from "reactstrap";
+import { Container,Button, Row, Col } from "reactstrap";
 
 export default function Content() {
   return (
@@ -25,21 +25,23 @@ export default function Content() {
       <div className="section section-content" data-background-color="black">
         <Container>
           <Row>
-            <Col lg="6">
+            <Col lg="4">
+              <Col lg="12">
               <div className="image-container">
                 <img
                   alt="..."
                   className="img img-raised rounded img-comments rellax"
-                  data-rellax-speed="1"
-                  src={require("assets/img/presentation-page/content.png")}
+                  data-rellax-speed="4"
+                  src={require("assets/img/waterloosign.jpg")}
                 />
                 <img
                   alt="..."
                   className="img img-raised rounded img-blog rellax"
                   data-rellax-speed="4"
-                  src={require("assets/img/presentation-page/content1.png")}
+                  src={require("assets/img/qnc.jpg")}
                 />
               </div>
+              </Col>
             </Col>
             <Col className="ml-auto mr-auto" lg="6">
               <div className="section-description">
@@ -48,8 +50,17 @@ export default function Content() {
                   <strong>Ontario, Canada</strong>
                 </h5>
                 <p className="description">
-                  {`We took into consideration multiple use cases and came up with some specific areas for you. If you need elements such as tables, comments, description areas, tabs and many others, we've got you covered. They're beautiful and easy to use for the end user navigating your website.`}
+                  {`Founded in 1957, the University of Waterloo has more than 42,000+ students attending annually. With a global network spanning more than 220,000 alumni in 151 countries, Waterloo is providing work-integrated learning opportunities with 7,100+ active co-op employers and fosters an entrepreneurial spirit. `}
                 </p>
+                <Button
+                  className="btn-simple mt-4"
+                  color="primary"
+                  target="_blank"
+                  href="https://uwaterloo.ca/"
+                  size="lg"
+                >
+                  Learn more about UWaterloo
+                </Button>
               </div>
             </Col>
           </Row>

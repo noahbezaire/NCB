@@ -54,26 +54,23 @@ export default function Footer() {
           <li>
             <NavLink to="/Experience" tag={Link}> Experience </NavLink>
           </li>
-          <li>
-            <NavLink to="/Contact" tag={Link}> Contact </NavLink>
-          </li>
         </ul>
         <ul className="social-buttons pull-right">
           <li>
             <Button
               className="btn-icon btn-neutral"
               color="link"
-              href="#"
+              href="https://www.linkedin.com/in/ncbezaire/"
               target="_blank"
             >
-              <i className="fab fa-twitter" />
+              <i className="fab fa-linkedin" />
             </Button>
           </li>
           <li>
             <Button
               className="btn-icon btn-neutral ml-1"
               color="link"
-              href="#"
+              href="https://www.facebook.com/noahbezaire"
               target="_blank"
             >
               <i className="fab fa-facebook-square" />
@@ -83,7 +80,7 @@ export default function Footer() {
             <Button
               className="btn-icon btn-neutral ml-1"
               color="link"
-              href="#"
+              href="https://www.instagram.com/ncbezaire/"
               target="_blank"
             >
               <i className="fab fa-instagram" />

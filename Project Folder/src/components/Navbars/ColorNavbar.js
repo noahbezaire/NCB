@@ -48,7 +48,7 @@ export default function ColorNavbar() {
       document.documentElement.scrollTop > 299 ||
       document.body.scrollTop > 299
     ) {
-      setNavbarColor("bg-info");
+      setNavbarColor("bg-black");
     } else if (
       document.documentElement.scrollTop < 300 ||
       document.body.scrollTop < 300
@@ -64,17 +64,12 @@ export default function ColorNavbar() {
             <NavbarBrand to="/index" tag={Link} id="tooltip6619950104">
               <span>NB • </span>Noah Bezaire
             </NavbarBrand>
-            <button className="navbar-toggler" id="navigation">
-              <span className="navbar-toggler-bar bar1" />
-              <span className="navbar-toggler-bar bar2" />
-              <span className="navbar-toggler-bar bar3" />
-            </button>
           </div>
           <UncontrolledCollapse navbar toggler="#navigation">
             <div className="navbar-collapse-header">
               <Row>
                 <Col className="collapse-brand" xs="6">
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <a to="/Index" tag={Link}>
                     NB• <span>Noah Bezaire</span>
                   </a>
                 </Col>
@@ -102,8 +97,7 @@ export default function ColorNavbar() {
                 <Button
                   className="nav-link"
                   color="default"
-                  tag={Link}
-                  to="/Contact"
+                  href="mailto:ncbezaire@email.com?subject=Reaching out via your site"
                   size="sm"
                 >
                   <p>Contact</p>
