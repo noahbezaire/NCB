@@ -21,9 +21,9 @@ import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 // Sections for this page
-import Features from "./IndexSections/Features.js";
-import ContentUniversity from "./IndexSections/ContentUniversity.js";
-import ContentCoop from "./IndexSections/ContentCoop.js";
+import Features from "./Sections/Features.js";
+import ContentUniversity from "./Sections/ContentUniversity.js";
+import ContentCoop from "./Sections/ContentCoop.js";
 
 
 

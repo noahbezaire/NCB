@@ -21,8 +21,8 @@ import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 // Sections for this page
-import Coops from "./IndexSections/Coops.js"
-import FullTime from "./IndexSections/FullTime.js"
+import Coops from "./Sections/Coops.js"
+import FullTime from "./Sections/FullTime.js"
 
 
 

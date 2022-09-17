@@ -22,7 +22,7 @@ import PresentationHeader from "components/Headers/PresentationHeader.js";
 import Footer from "components/Footers/Footer.js";
 
 // Sections for this page
-import About from "./IndexSections/About.js";
+import About from "./Sections/About.js";
 
 
 
