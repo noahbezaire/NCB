@@ -56,7 +56,7 @@ export default function PresentationHeader() {
         <Container>
           <div className="content-center brand">
             <h1 className="h1-seo">
-              <small className="text-primary">Noah Bezaire</small>
+              <small className="text-black">Noah Bezaire</small>
             </h1>
             <h3>
               <i>
