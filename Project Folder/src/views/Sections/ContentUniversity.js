@@ -46,7 +46,7 @@ export default function Content() {
             <Col className="ml-auto mr-auto" lg="6">
               <div className="section-description">
                 <h1 className="title">University of Waterloo</h1>
-                <h5 className="category text-danger mb-5">
+                <h5 className="category text-primary mb-5">
                   <strong>Ontario, Canada</strong>
                 </h5>
                 <p className="description">

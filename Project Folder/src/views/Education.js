@@ -21,9 +21,9 @@ import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 // Sections for this page
-import Features from "./Sections/Features.js";
 import ContentUniversity from "./Sections/ContentUniversity.js";
 import ContentCoop from "./Sections/ContentCoop.js";
+import ManagementEngineering from "./Sections/ManagementEngineering.js";
 
 
 
@@ -46,7 +46,7 @@ export default function Presentation() {
       <div className="space-110" />
         <ContentUniversity/>
         <ContentCoop/>
-        <Features />
+        <ManagementEngineering />
         <Footer />
       </div>
     </>

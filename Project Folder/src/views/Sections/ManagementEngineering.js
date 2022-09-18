@@ -19,11 +19,10 @@ import React from "react";
 // reactstrap components
 import { Badge, Button, Container, Row, Col } from "reactstrap";
 
-export default function Features() {
+export default function ManagementEngineering() {
   return (
     <>
       <div className="cd-section" id="features">
-        {/* ********* FEATURES 1 ********* */}
         <div className="features-1">
           <Container>
             <Row>
@@ -84,10 +83,10 @@ export default function Features() {
             </Row>
             <Row>
             <Col md="12">
-
               <Button
                 className="btn-simple mt-4"
                 color="primary"
+
                 target="_blank"
                 href="https://uwaterloo.ca/management-sciences/"
                 size="lg"
@@ -98,7 +97,6 @@ export default function Features() {
               </Row>
           </Container>
         </div>
-        {/* ********* END FEATURES 1 ********* */}
       </div>{" "}
     </>
   );

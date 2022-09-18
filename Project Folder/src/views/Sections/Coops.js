@@ -48,7 +48,7 @@ export default function Coop() {
               <Col className="ml-auto mr-auto text-center" md="8">
                 <h2 className="title">Co-Op Experience</h2>
                 <h4 className="description">
-                Co-Operative Education was the #1 reason that I choose to attend Waterloo and I was fortunate to have a variety of experiences.
+                Co-Operative Education was the #1 reason I choose to attend Waterloo and I was fortunate to have a variety of experiences.
                 </h4>
               </Col>
             </Row>

@@ -28,7 +28,7 @@ export default function Content() {
             <Col className="ml-auto mr-auto" lg="6">
               <div className="section-description">
                 <h1 className="title">Co-Operative Education</h1>
-                <h5 className="category text-danger mb-5">
+                <h5 className="category text-primary mb-5">
                   <strong>North America's largest co-op program</strong>
                 </h5>
                 <p className="description">
