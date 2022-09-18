@@ -38,7 +38,7 @@ import {
 } from "reactstrap";
 
 // core components
-export default function Coop() {
+export default function ExperienceCoop() {
   return (
     <>
       <div className="cd-section" id="teams">
