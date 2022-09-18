@@ -21,9 +21,9 @@ import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 // Sections for this page
-import ContentUniversity from "./Sections/ContentUniversity.js";
-import ContentCoop from "./Sections/ContentCoop.js";
-import ManagementEngineering from "./Sections/ManagementEngineering.js";
+import EducationUniversityContent from "./Sections/EducationUniversityContent.js";
+import EducationCoopContent from "./Sections/EducationCoopContent.js";
+import EducationManagementEngineeringContent from "./Sections/EducationManagementEngineeringContent.js";
 
 
 
@@ -44,9 +44,9 @@ export default function Presentation() {
       <ColorNavbar />
       <div className="wrapper" ref={wrapper}>
       <div className="space-110" />
-        <ContentUniversity/>
-        <ContentCoop/>
-        <ManagementEngineering />
+        <EducationUniversityContent/>
+        <EducationCoopContent/>
+        <EducationManagementEngineeringContent />
         <Footer />
       </div>
     </>

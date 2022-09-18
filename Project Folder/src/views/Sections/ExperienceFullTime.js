@@ -40,7 +40,7 @@ import {
 // core components
 
 
-export default function FullTime() {
+export default function ExperienceFullTime() {
   return (
     <>
       <div className="cd-section" id="teams">

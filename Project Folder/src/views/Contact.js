@@ -21,7 +21,7 @@ import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 // Sections for this page
-import Contact from "./Sections/Contact.js";
+import ContactContent from "./Sections/ContactContent.js";
 
 
 
@@ -41,7 +41,7 @@ export default function Presentation() {
       <ColorNavbar />
       <div className="wrapper" ref={wrapper}>
         <div className="space-110" />
-        <Contact />
+        <ContactContent />
         <Footer />
       </div>
     </>

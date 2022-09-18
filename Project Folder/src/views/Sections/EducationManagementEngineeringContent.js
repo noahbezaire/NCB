@@ -19,7 +19,7 @@ import React from "react";
 // reactstrap components
 import { Badge, Button, Container, Row, Col } from "reactstrap";
 
-export default function ManagementEngineering() {
+export default function EducationManagementEngineeringContent() {
   return (
     <>
       <div className="cd-section" id="features">

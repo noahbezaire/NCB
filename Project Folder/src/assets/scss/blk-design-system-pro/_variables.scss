@@ -104,7 +104,7 @@ $success:       #00f2c3 !default;
 $info:          #1d8cf8 !default;
 $warning:       #ff8d72 !default;
 $danger:        #fd5d93 !default;
-$black:         #222a42 !default;
+$black:         #2c2f37 !default;
 
 
 // gradient
@@ -897,7 +897,7 @@ $card-border-color:                 rgba($black, .05);
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width});
 $card-cap-bg:                       $gray-100 !default;
 $card-bg:                           $white !default;
-$card-black-background:             #1f2251 !default;
+$card-black-background:             $black !default;
 $card-img-overlay-padding:          1.25rem !default;
 
 //$card-group-margin:                 ($grid-gutter-width / 2);

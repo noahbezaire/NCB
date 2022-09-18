@@ -33,7 +33,7 @@ import {
   Table
 } from "reactstrap";
 
-export default function Content() {
+export default function AboutContent() {
   return (
     <>
     <div className="space-110" />

@@ -21,8 +21,8 @@ import ColorNavbar from "components/Navbars/ColorNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 // Sections for this page
-import Coops from "./Sections/Coops.js"
-import FullTime from "./Sections/FullTime.js"
+import ExperienceCoop from "./Sections/ExperienceCoop.js"
+import ExperienceFullTime from "./Sections/ExperienceFullTime.js"
 
 
 
@@ -41,8 +41,8 @@ export default function Presentation() {
     <>
       <ColorNavbar />
       <div className="wrapper" ref={wrapper}>
-        <Coops/>
-        <FullTime/>
+        <ExperienceCoop/>
+        <ExperienceFullTime/>
         <Footer />
       </div>
     </>
