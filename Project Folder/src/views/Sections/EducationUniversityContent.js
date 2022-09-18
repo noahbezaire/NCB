@@ -30,15 +30,15 @@ export default function EducationUniversityContent() {
               <div className="image-container">
                 <img
                   alt="..."
-                  className="img img-raised rounded img-comments rellax"
+                  className="img rounded img-blog rellax"
                   data-rellax-speed="4"
-                  src={require("assets/img/waterloosign.jpg")}
+                  src={require("assets/img/qnc.jpg")}
                 />
                 <img
                   alt="..."
-                  className="img img-raised rounded img-blog rellax"
+                  className="img img-comments rellax"
                   data-rellax-speed="4"
-                  src={require("assets/img/qnc.jpg")}
+                  src={require("assets/img/waterloosign.jpg")}
                 />
               </div>
               </Col>
