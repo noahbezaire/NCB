@@ -27,6 +27,7 @@ import {
   NavbarBrand,
   Navbar,
   NavItem,
+  NavLink,
   Nav,
   Container,
   Row,
@@ -47,7 +48,7 @@ export default function ColorNavbar() {
       document.documentElement.scrollTop > 299 ||
       document.body.scrollTop > 299
     ) {
-      setNavbarColor("bg-info");
+      setNavbarColor("bg-black");
     } else if (
       document.documentElement.scrollTop < 300 ||
       document.body.scrollTop < 300
@@ -63,17 +64,12 @@ export default function ColorNavbar() {
             <NavbarBrand to="/index" tag={Link} id="tooltip6619950104">
               <span>NB • </span>Noah Bezaire
             </NavbarBrand>
-            <button className="navbar-toggler" id="navigation">
-              <span className="navbar-toggler-bar bar1" />
-              <span className="navbar-toggler-bar bar2" />
-              <span className="navbar-toggler-bar bar3" />
-            </button>
           </div>
           <UncontrolledCollapse navbar toggler="#navigation">
             <div className="navbar-collapse-header">
               <Row>
                 <Col className="collapse-brand" xs="6">
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <a to="/Index" tag={Link}>
                     NB• <span>Noah Bezaire</span>
                   </a>
                 </Col>
@@ -85,75 +81,29 @@ export default function ColorNavbar() {
               </Row>
             </div>
             <Nav className="ml-auto" navbar>
-              <UncontrolledDropdown nav>
-                <DropdownToggle caret color="default" nav>
-                  <i className="fa fa-cogs d-lg-none d-xl-none" />
-                  About
-                </DropdownToggle>
-                <DropdownMenu className="dropdown-with-icons">
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="tim-icons icon-paper" />
-                    Components
-                  </DropdownItem>
-                  <DropdownItem to="/presentation" tag={Link}>
-                    <i className="tim-icons icon-bullet-list-67" />
-                    Presentation Page
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/overview?ref=blkdspr-pages-navbar"
-                    target="_blank"
-                  >
-                    <i className="tim-icons icon-book-bookmark" />
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav>
-                <DropdownToggle caret color="default" nav>
-                  <i className="fa fa-cogs d-lg-none d-xl-none" />
-                  Education
-                </DropdownToggle>
-                <DropdownMenu className="dropdown-with-icons">
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="tim-icons icon-paper" />
-                    Components
-                  </DropdownItem>
-                  <DropdownItem to="/presentation" tag={Link}>
-                    <i className="tim-icons icon-bullet-list-67" />
-                    Presentation Page
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/overview?ref=blkdspr-pages-navbar"
-                    target="_blank"
-                  >
-                    <i className="tim-icons icon-book-bookmark" />
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav>
-                <DropdownToggle caret color="default" nav>
-                  <i className="fa fa-cogs d-lg-none d-xl-none" />
-                  Experience
-                </DropdownToggle>
-                <DropdownMenu className="dropdown-with-icons">
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="tim-icons icon-paper" />
-                    Components
-                  </DropdownItem>
-                  <DropdownItem to="/presentation" tag={Link}>
-                    <i className="tim-icons icon-bullet-list-67" />
-                    Presentation Page
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/overview?ref=blkdspr-pages-navbar"
-                    target="_blank"
-                  >
-                    <i className="tim-icons icon-book-bookmark" />
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+            <NavItem>
+              <NavLink to="/Index" tag={Link}>Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/About" tag={Link}>About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/Education" tag={Link}>Education</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/Experience" tag={Link}>Experience</NavLink>
+            </NavItem>
+              <NavItem>
+                <Button
+                  className="nav-link"
+                  color="default"
+                  href="mailto:ncbezaire@email.com?subject=Reaching out via your site"
+                  size="sm"
+                >
+                  <p>Contact</p>
+                </Button>
+              </NavItem>
+
             </Nav>
           </UncontrolledCollapse>
         </Container>

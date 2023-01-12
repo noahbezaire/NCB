@@ -56,30 +56,20 @@ export default function PresentationHeader() {
         <Container>
           <div className="content-center brand">
             <h1 className="h1-seo">
-              <small className="text-warning">Noah Bezaire</small>
+              <small className="text-black">Noah Bezaire</small>
             </h1>
             <h3>
-            <i>
-              Secondary Title Here
-            </i>
+              <i>
+                Management Engineering Graduate
+                </i>
             </h3>
             <Button
               className="btn-simple mt-4"
-              color="warning"
-              href="#"
+              color="primary"
+              href="mailto:ncbezaire@email.com?subject=Reaching out via your site"
               size="lg"
-              target="_blank"
             >
               Contact
-            </Button>
-            <Button
-              className="btn-link mt-4 d-block"
-              color="warning"
-              href="#pablo"
-              onClick={scrollPage}
-              size="lg"
-            >
-              <u>learn more</u>
             </Button>
           </div>
         </Container>
